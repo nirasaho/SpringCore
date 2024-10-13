@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+	http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean name="Emp1" class="com.springcore.collections.Emp">
+		<property name="name" value="demo"/>
+		<property name="phones">
+			<list>
+			<value>12212112121</value>
+			<value>1221213</value>
+			<value>122121123434</value>
+			<value>122121123</value>
+			<null/>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+			<value>Odisha</value>
+			<value>Delhi</value>
+			<value>Bengaluru</value>
+			<value>Hydrabad</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+			<entry key="java" value="2months"/>
+			<entry key="python" value="1.2months"/>
+			<entry key="c" value="1months"/>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+			<prop key="username">Nirakar</prop>
+			<prop key="password">Nisf</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
