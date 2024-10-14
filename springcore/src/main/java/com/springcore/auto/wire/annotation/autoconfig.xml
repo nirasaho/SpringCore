@@ -8,16 +8,15 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-
 	<context:annotation-config/>
-	
-	<bean class="com.springcore.lifecycle.Samosa" name="s1" init-method="init" destroy-method="destroy">
-		<property name="price" value="10"/>
+
+	<bean class="com.springcore.auto.wire.annotation.Address" name="address7">
+		<property name="street" value="sanabazar"/>
+		<property name="city" value="jspur" />
 	</bean>
-	<bean class="com.springcore.lifecycle.Pepsi" name="p1">
-		<property name="price" value="10"/>
+	<bean class="com.springcore.auto.wire.annotation.Address" name="address1">
+		<property name="street" value="badabazar"/>
+		<property name="city" value="paradeep" />
 	</bean>
-	<bean class="com.springcore.lifecycle.Example" name="e1">
-		<property name="subject" value="math"/>
-	</bean>
+	<bean class="com.springcore.auto.wire.annotation.Emp" name="emp1"/>
 </beans>
